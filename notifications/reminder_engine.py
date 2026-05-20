@@ -65,7 +65,7 @@ def build_reminder_jobs(upcoming_deadlines: Iterable[CaseDeadline], db: Session)
         }
 
         user_pref = user_prefs.get(deadline.user_id)
-        
+
         if not user_pref:
             continue
 
